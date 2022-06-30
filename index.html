@@ -10,8 +10,9 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
         * {
-            font-family: Helvetica, sans-serif;
+            font-family: 'Quicksand', sans-serif;
             color: #3C64B1;
             font-size: 16px;
             margin: 0;
@@ -38,7 +39,9 @@
             padding-left: 10px;
             background-color: #3C64B1;
             position: fixed;
+            overflow:hidden;
             width: 100%;
+            z-index: 100;
         }
 
         #logotext {
@@ -132,7 +135,7 @@
             color: #ffffff;
             padding-top: 30px;
             padding-bottom:10px;
-            font-size: 50px;
+            font-size: 55px;
             line-height:50px;
             position:relative;
             float:left;
@@ -150,7 +153,7 @@
             /* background-color:#3C64b1; */
         }
         #home h1:before{
-            animation:reveal 1s ease forwards;
+            animation:reveal 2s ease forwards;
         }
         #home h1:after{
             background-color:#fff;
@@ -207,6 +210,9 @@
         div ul li,
         ol li {
             color: #000000;
+            font-size: 12px;
+            padding-left: 0px;
+            margin-left: 0px;
         }
 
         h2 {
@@ -245,8 +251,8 @@
             }
             #home h1{
                 margin-top:1px;
-                font-size:40px;
-                line-height:40px;
+                font-size:50px;
+                line-height:45px;
               
                
             
@@ -254,7 +260,7 @@
             #aboutme {
                 width:490px;
                 flex-direction: column;
-                padding-left: 20px;
+                padding-left: 30px;
 
             }
             #intro {
@@ -279,26 +285,44 @@
             }
         }
         @media(max-width:500px) {
+            nav ul li a {
+                font-size: 14px;
+                margin-right: 12px;
+                
+            }
+
+            #logotext {
+                font-size: 16px;
+            }
+
             #home{
             
-                padding: 100px 100px 0px 25px;
+                padding: 100px 100px 0px 20px;
             }
             #home h1{
 
-                font-size:33px;
+                font-size:40px;
                 line-height:35px;
-              
-               
-            
             }
-        }
+            #aboutpic {
+                width: 330px;
+               
+            }
+            #aboutme_text{
+                width: 330px;
+               
+            }
+            nav ul {
+            margin-top: 11px;
+            }
+    }
 
     </style>
 </head>
 
 <body>
     <header>
-        <a href="Index.html" id="logotext">TRIPLE-TECH</a>
+        <a href="Index.html" id="logotext">TRIPLETECH</a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -323,7 +347,7 @@
             <h1 style="text-align: center; line-height: 100px; color:#e79c10">About</h1>
             <div id="aboutme" style="text-align: justify; line-height: 30px; font-size: 16px;">
                 <div id="about_images">
-                    <img src="./img/pics3.jpg" alt="" width="350px" id="aboutpic">
+                    <img src="./img/pics3.jpg" alt="" width="350px" id="aboutpic" style="border-radius:50%; border: 5px solid #e79c10; margin: auto; ">
                 </div>
                 <div id="aboutme_text">
                     <span>ABDULRASHEED ABDULSALAM</span> <br>
@@ -335,7 +359,7 @@
                         <br>
                         A self-motivated and dedicated web developer with less than a year of experience
                         <br>
-                        <div style="display:flex; ">
+                        <div style="display:flex;  font-size:16px ; ">
                             <ul>
                                 <h2>Skills</h2>
                                 <li> HTML</li>
