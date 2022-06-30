@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration_page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+    *{
+        font-family: Helvetica, sans-serif;
+        color: #3C64B1;
+        font-size: 14px;
+        
+    }
+    header a{
+            padding-left: 20px;
+            font-weight:700;
+            font-size: 20px ;
+            line-height: 40px;
+        }
+    #signup{
+        width: 500px;
+        margin: auto;
+        left: 450px;
+        margin-top: 20px;
+        color: #3C64B1;
+        padding: 10px 30px 40px 30px;
+        -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+        -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        border-radius: 5px;
+
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    ::placeholder{
+        opacity: 1;
+        color: #91ade0;
+        font-size: 12px;
+    }
+    h1{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 15px ;
+        color: #E79C10;
+    }
+
+    #firstname, #lastname {
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1.5px solid #3C64B1;
+        outline-color: #3C64B1;
+        
+    }
+    
+    #phonenumber, #gender{
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1.5px solid #3C64B1;
+        outline-color: #3C64B1;
+        
+    }
+    #email, #country, #state{
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1.5px solid #3C64B1;
+        outline-color: #3C64B1;
+        
+    }
+    #password, #confirmpassword{
+        margin-top:10px ;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1.5px solid #3C64B1;
+        outline-color: #3C64B1;
+    }
+    #button{
+        background: #3C64B1;
+        border-radius: 5px;
+        border: #3C64B1;
+        padding: 10px;
+        margin-top: 20px;
+        color:#ffffff;
+        cursor: pointer;
+    }
+    #button:hover{
+        background:rgb(46, 81, 145);
+    }
+    span{
+        font-size: 13px;
+    }
+    a{
+        padding-left: 3px;
+    }
+    #signin_link{
+        color:rgb(46, 81, 145);
+    }
+    #signin_link:hover{
+        color:#E79C10;
+    }
+    a{
+        text-decoration: 30px;
+    }
+    a i{
+            padding: 10px;
+            font-size: 20px;
+        }
+    footer{
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size:10px;
+    }
+
+    @media(max-width:700px){
+        #signup{
+            width:360px;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <header><a href="Index.html">TRIPLE-TECH</a></header>
+    <main>
+        <div id="signup">
+            <h1>Registration form <br> <span style="font-size:18px ;" >Enter your details</span> </h1>
+            <form action="" method="post">
+            <label for="firstname" >First Name</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Firstname" required> <br>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Lastname" required> <br>
+            <label for="phonenumber">Phone Number</label>
+            <input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone Number" required minlength="11" maxlength="11"> <br>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select> <br>
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" placeholder="Country" required> <br>
+            <label for="state">State/Province</label>
+            <input type="text" name="state" id="state" placeholder="State/Province" required> <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="johndoe@gmail" required> <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="**********" required> <br>
+            <label for="Confirmpassword">Confirm Password</label>
+            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="**********" required> <br>
+            <span><input type="checkbox" name="checkbox" id="checkbox" required> I agree to the User Agreement and Privacy Policy  </span> 
+            <input type="submit" value="Register"  id="button"> <br> <br>
+            <span style="text-align: center;">Do not have an account?<a href="/sign_in.html" style="text-decoration:none;" id="signin_link">Sign in</a></span>  
+            </form>
+        </div>
+    </main>
+    <footer>@ Copyright 2022 All right reserved</footer>
+</body>
+</html>

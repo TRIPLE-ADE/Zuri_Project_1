@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            font-family: Helvetica, sans-serif;
+            color: #3C64B1;
+            font-size: 14px;
+
+        }
+
+        header a{
+            padding-left: 20px;
+            font-weight:700;
+            font-size: 20px ;
+            line-height: 40px;
+        }
+
+        #signin {
+            width: 350px;
+            left: 450px;
+            color: #3C64B1;
+            margin: auto;
+            padding: 10px 30px 50px 30px;
+            margin-top: 30px;
+            -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+            border-radius: 5px;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        ::placeholder {
+            opacity: 1;
+            color: #93afe4;
+            font-size: 12px;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 35px;
+            margin-bottom: 17px;
+            color: #E79C10;
+        }
+
+        span {
+            color: #3C64B1;
+        }
+
+        #email {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1.5px solid #3C64B1;
+            outline-color: #3C64B1;
+
+        }
+
+        #password {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1.5px solid #3C64B1;
+            outline-color: #3C64B1;
+        }
+
+        #button {
+            background: #3C64B1;
+            border-radius: 5px;
+            border: #3C64B1;
+            padding: 10px;
+            margin-top: 20px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        #button:hover {
+            background: rgb(46, 81, 145);
+        }
+
+        span {
+            font-size: 13px;
+        }
+
+        a {
+            text-decoration: none;
+            padding-left: 3px;
+        }
+
+        #signin_link {
+            color: rgb(46, 81, 145);
+        }
+
+        #signup_link:hover {
+            color: #E79C10;
+        }
+        a i{
+            padding: 10px;
+            font-size: 20px;
+        }
+        footer {
+            padding-top: 40px;
+            padding-left: 20px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header><a href="Index.html">TRIPLE-TECH</a></header>
+    <main>
+        <div id="signin">
+            <h1>Welcome Back! <span style="font-size: 22px;"> Login </span></h1>
+            <form action="" method="get">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required> <br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="**********" required> <br>
+                <span><input type="checkbox" name="checkbox" id="checkbox" required>Remember me <input type="checkbox" name="checkbox" id="checkbox" style="margin-left:120px;">Forget Password</span>
+                <input type="submit" value="Sign In" id="button"> <br> <br>
+                <span style="text-align: center;">Do not have an account?<a href="/sign_up.html"style="text-decoration:none;" id="signup_link">Signup</a></span>
+            </form>
+        </div>
+    </main>
+    <footer>@ Copyright 2022 All right reserved</footer>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_page </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+        font-family: Helvetica, sans-serif;
+        color: #3C64B1;
+        font-size: 14px;
+        margin: 0;
+        
+        }
+        header{
+            padding:7px;
+        display: flex;
+        justify-content:space-between;
+        padding-left: 10px;
+        background-color:#3C64B1;
+        }
+        #logotext{
+            color: #ffffff;
+            font-weight:700;
+            font-size: 20px ;
+            line-height: 40px;
+        }
+        nav ul{
+            padding-bottom: 15px;
+            display: flex;
+            list-style-type: none;
+            margin-top:15px;
+
+        }
+        nav ul li a{
+            color: #ffffff;
+            padding-right: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 17px; 
+            line-height: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #signup{
+            border: 2px solid #ffffff;
+            background: #3C64B1;
+            color: #ffffff;
+            border-radius: 16px;
+            padding: 10px;
+        }
+        #signup:hover{
+            color: #3C64B1;
+            background-color: #ffffff;
+        }
+        #contact{
+        display: flex;
+        width: 700px;
+        left: 450px;
+        color: #3C64B1;
+        margin: auto;
+        padding: 10px 30px 30px 30px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+        -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        border-radius: 5px;
+        background-color: lightgray;
+        }
+        #contact-form{
+           padding: 40px; 
+            width: 350px;
+        }
+        #contact-details{
+            text-align: center;
+            padding:150px 40px 20px 40px;
+
+        }
+        form{
+        display: flex;
+        flex-direction: column;
+        }
+        h1{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 15px;
+        margin-bottom: 5px ;
+        color: #E79C10;
+        text-align: center;
+        padding-top: 20px;
+        
+        }
+        #name{
+        margin-top: 10px;
+        padding: 7px;
+        border-radius: 5px;
+        border: 1.5px solid #3C64B1;
+        outline-color: #3C64B1;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+        }
+        #email{
+        margin-top: 10px;
+        padding: 7px;
+        border-radius: 5px;
+        border: 1.5px solid #3C64B1;
+        outline-color: #3C64B1;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+        }
+        #button{
+        background: #3C64B1;
+        border-radius: 5px;
+        border: #3C64B1;
+        padding: 8px;
+        margin-top: 20px;
+        color:#ffffff;
+        cursor: pointer;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+        }
+        #button:hover{
+        background:rgb(46, 81, 145);
+        }
+        #comments{
+        border-radius: 5px;
+        border: 1.5px solid #3C64B1;
+        outline-color: #3C64B1; 
+        padding: 8px;
+        max-width: 330px;
+        min-width: 329px;
+        min-height: 100px;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+        }
+        ::placeholder{
+        color: #8599bd;
+        font-size: 12px; 
+        }
+
+        .social-icons{
+           list-style-type: none;
+           display: flex;
+           justify-content: center;
+           
+        }
+        .social-icons li a .fa-brands{
+            color: #ffffff;
+            font-size:35px;
+           padding: 10px;
+        }
+        footer {
+            color: #ffffff;
+        padding: 20px;
+        font-size:10px;
+        background-color:#3C64B1;
+    }
+    @media(max-width:800px){
+        #contact {
+          width: 600px;
+        }
+        #contact-form{
+            padding:20px ;
+        }
+        #contact-details{
+           
+            padding-right: 20px;
+            padding-left: 10px;
+        }
+
+    }
+    @media(max-width:700px){
+        #contact{
+            width:400px;
+            display:block;
+        }
+        #contact-form{
+            padding-top: 10px;
+        }
+        #contact-details{
+            padding-top: 30px;
+        }
+        h1{
+            font-size: 30px;
+            line-height: 16px;
+        }
+        nav ul li a {
+            font-size: 15px;
+        }
+        #logotext {
+            font-size: 17px;
+        }
+
+    }
+    </style>
+</head>
+<body>
+    <header>
+            <a href="Index.html" id="logotext">TRIPLE-TECH</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sign_in.html">Login</a></li>
+                <li><a href="sign_up.html" id="signup">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <h1>CONTACT</h1>
+            <div id="contact">
+                <div id="contact-details">
+                    <p style="font-size:medium;">Minna, Niger State, Nigeria <br> <a href="https://wa.me/+2348137290905/" target="_blank"><i class="fa-brands fa-whatsapp-square" style="padding-right: 10px; font-size: 20px;">  </i>+234-813-729-0905</a>  <br> adetomiwa13603@gmail.com</p>
+                </div>
+               <div id="contact-form">
+                <form action="https://formsubmit.co/036c5c8320879126bcad98529ea969a6" method="POST"> 
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email address"> <br> 
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Message..." ></textarea>
+                    <input type="submit" value="Send"  id="button"> 
+                    </form>
+               </div>
+            </div>
+            
+        </main>
+    <footer>
+        
+        <ul class="social-icons">
+            <li> <a href="https://github.com/TRIPLE-ADE" target="_blank"><i class="fa-brands fa-github-square" style></i> </a> </li>
+            <li> <a href="https://www.linkedin.com/in/abdulsalam-abdulrasheed-002768232/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a> </li>
+            <li> <a href="https://twitter.com/Triple123A" target="_blank"> <i class="fa-brands fa-twitter-square"></i> </a> </li>
+        </ul>
+        
+        @ Copyright 2022 All right reserved
+
+    </footer>
+</body>
+</html>
