@@ -19,7 +19,6 @@
         }
 
         header a{
-            padding-left: 20px;
             font-weight:700;
             font-size: 20px ;
             line-height: 40px;
@@ -27,7 +26,7 @@
 
         #signin {
             width: 350px;
-            left: 450px;
+            left: 430px;
             color: #3C64B1;
             margin: auto;
             padding: 10px 30px 50px 30px;
@@ -118,6 +117,19 @@
             padding-left: 20px;
             font-size: 10px;
         }
+        @media(max-width:500px) {
+          #signin{
+            width: 300px;
+          }  
+          span #checkbox{
+            margin-left:70px !important;
+          }
+          
+        a {
+           
+            padding-left: 0px;
+        }
+        }
     </style>
 </head>
 
@@ -131,7 +143,7 @@
                 <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required> <br>
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" placeholder="**********" required> <br>
-                <span><input type="checkbox" name="checkbox" id="checkbox" required>Remember me <input type="checkbox" name="checkbox" id="checkbox" style="margin-left:105px;">Forget Password</span>
+                <span><input type="checkbox" name="checkbox"  >Remember me <input type="checkbox" id="checkbox" style="margin-left:106px;">Forget Password</span>
                 <input type="submit" value="Sign In" id="button"> <br> 
                 <span style="text-align: center;">Do not have an account?<a href="/sign_up.html"style="text-decoration:none;" id="signup_link">Signup</a></span>
             </form>
